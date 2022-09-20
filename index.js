@@ -9,3 +9,15 @@
 
   $list.forEach((item) => item.addEventListener("click", activeLink));
 })(document);
+
+/***** MenuToggle ****/
+((d) => {
+  const $toggle = d.querySelector(".toggle"),
+    $navigation = d.querySelector(".navigation"),
+    $main = d.querySelector(".main");
+
+  $toggle.onclick = function () {
+    $navigation.classList.toggle("act-btn");
+    $main.classList.toggle("act-btn");
+  };
+})(document);
