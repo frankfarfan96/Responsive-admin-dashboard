@@ -44,7 +44,7 @@ body {
 }
 
 .navigation ul {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -63,9 +63,26 @@ body {
   background: var(--white);
 }
 
-.navigation ul li:nth-child(1) {
+.logo {
   margin-bottom: 40px;
-  pointer-events: none;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 19px;
+}
+
+.logo img {
+  min-width: 30px;
+  height: 30px;
+}
+
+.logo a {
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  color: var(--white);
 }
 
 .navigation ul li a {
@@ -147,6 +164,16 @@ body {
 .main.act-btn {
   width: calc(100% - 80px);
   left: 80px;
+}
+
+.loader {
+  margin: 1rem auto;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 10%;
 }
 
 .topbar {

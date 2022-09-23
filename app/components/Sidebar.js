@@ -3,8 +3,8 @@ export function Sidebar() {
 
   $article.innerHTML = `
       <nav class="navigation">
-        <ul>
-          <li>
+        
+          <div class="logo">
             <a href="#">
               <span class="icon"
                 ><img
@@ -14,7 +14,8 @@ export function Sidebar() {
               /></span>
               <span class="title"><b>Farfenix</b></span>
             </a>
-          </li>
+          </div>
+          <ul>
           <li>
             <a href="#">
               <span class="icon"
