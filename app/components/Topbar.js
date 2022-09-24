@@ -17,7 +17,8 @@ export function Topbar() {
           <div class="user">
             <img class="frank" src="./app/assets/frankfarfan.jpg" alt="User" />
           </div>
-        </div>    
+        </div>   
+        <div id="main"></div> 
   `;
 
   return $topbar;

@@ -5,7 +5,7 @@ export function Sidebar() {
       <nav class="navigation">
         
           <div class="logo">
-            <a href="#">
+            <a href="#/">
               <span class="icon"
                 ><img
                   src="./app/assets/fenix.svg"
@@ -17,7 +17,7 @@ export function Sidebar() {
           </div>
           <ul>
           <li>
-            <a href="#">
+            <a href="#/dashboard">
               <span class="icon"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
@@ -25,7 +25,7 @@ export function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#/costumers">
               <span class="icon"
                 ><ion-icon name="person-outline"></ion-icon>
               </span>
@@ -33,7 +33,7 @@ export function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#/message">
               <span class="icon"
                 ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
               ></span>
@@ -41,7 +41,7 @@ export function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#/help">
               <span class="icon"
                 ><ion-icon name="help-outline"></ion-icon
               ></span>
@@ -49,7 +49,7 @@ export function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#/settings">
               <span class="icon"
                 ><ion-icon name="settings-outline"></ion-icon
               ></span>
@@ -57,7 +57,7 @@ export function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#/password">
               <span class="icon"
                 ><ion-icon name="lock-closed-outline"></ion-icon
               ></span>
@@ -65,7 +65,7 @@ export function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#/signout">
               <span class="icon"
                 ><ion-icon name="log-out-outline"></ion-icon
               ></span>

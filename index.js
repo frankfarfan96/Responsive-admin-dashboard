@@ -4,6 +4,12 @@ import toggleBar from "./app/helpers/toggle_bar.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   App();
-  selectPage(".navigation li");
+  toggleBar(".toggle", ".navigation", ".main");
+  selectPage(".navigation ul li");
+});
+
+window.addEventListener("hashchange", (e) => {
+  App();
+  selectPage(".navigation ul li");
   toggleBar(".toggle", ".navigation", ".main");
 });

@@ -1,6 +1,6 @@
 import { Sidebar } from "./app/components/Sidebar.js";
 import { Topbar } from "./app/components/Topbar.js";
-import { Loader } from "./app/components/Loader.js";
+import { Router } from "./app/components/Router.js";
 
 export function App() {
   const d = document,
@@ -9,5 +9,6 @@ export function App() {
   $root.innerHTML = null;
   $root.appendChild(Sidebar());
   $root.appendChild(Topbar());
-  $root.appendChild(Loader());
+  // $root.appendChild(Loader());
+  Router();
 }
