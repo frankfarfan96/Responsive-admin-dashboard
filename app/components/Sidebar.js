@@ -16,7 +16,7 @@ export function Sidebar() {
             </a>
           </div>
           <ul>
-          <li>
+          <li id="db">
             <a href="#/dashboard">
               <span class="icon"
                 ><ion-icon name="home-outline"></ion-icon
@@ -24,7 +24,7 @@ export function Sidebar() {
               <span class="title">Dashboard</span>
             </a>
           </li>
-          <li>
+          <li id="ctm">
             <a href="#/costumers">
               <span class="icon"
                 ><ion-icon name="person-outline"></ion-icon>
@@ -32,7 +32,7 @@ export function Sidebar() {
               <span class="title">Customers</span>
             </a>
           </li>
-          <li>
+          <li id="msg">
             <a href="#/message">
               <span class="icon"
                 ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
@@ -40,7 +40,7 @@ export function Sidebar() {
               <span class="title">Message</span>
             </a>
           </li>
-          <li>
+          <li id="hlp">
             <a href="#/help">
               <span class="icon"
                 ><ion-icon name="help-outline"></ion-icon
@@ -48,7 +48,7 @@ export function Sidebar() {
               <span class="title">Help</span>
             </a>
           </li>
-          <li>
+          <li id="sts">
             <a href="#/settings">
               <span class="icon"
                 ><ion-icon name="settings-outline"></ion-icon
@@ -56,7 +56,7 @@ export function Sidebar() {
               <span class="title">Settings</span>
             </a>
           </li>
-          <li>
+          <li id="psw">
             <a href="#/password">
               <span class="icon"
                 ><ion-icon name="lock-closed-outline"></ion-icon
@@ -64,7 +64,7 @@ export function Sidebar() {
               <span class="title">Password</span>
             </a>
           </li>
-          <li>
+          <li id="sgt">
             <a href="#/signout">
               <span class="icon"
                 ><ion-icon name="log-out-outline"></ion-icon

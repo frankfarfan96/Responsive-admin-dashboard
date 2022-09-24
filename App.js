@@ -9,6 +9,6 @@ export function App() {
   $root.innerHTML = null;
   $root.appendChild(Sidebar());
   $root.appendChild(Topbar());
-  // $root.appendChild(Loader());
   Router();
+  // $root.appendChild(Loader());
 }

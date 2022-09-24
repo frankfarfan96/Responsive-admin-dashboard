@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
   App();
   toggleBar(".toggle", ".navigation", ".main");
   selectPage(".navigation ul li");
-});
 
-window.addEventListener("hashchange", (e) => {
-  App();
-  selectPage(".navigation ul li");
-  toggleBar(".toggle", ".navigation", ".main");
+  window.addEventListener("hashchange", (e) => {
+    App();
+    selectPage(".navigation ul li");
+    toggleBar(".toggle", ".navigation", ".main");
+  });
 });

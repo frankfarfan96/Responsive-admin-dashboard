@@ -1,24 +1,44 @@
+import { MainDashBoard } from "./MainDashBoard.js";
+
 export function Router() {
   const d = document,
-    w = window;
+    w = window,
+    $main = d.getElementById("main"),
+    $db = d.getElementById("db"),
+    $ctm = d.getElementById("ctm"),
+    $msg = d.getElementById("msg"),
+    $hlp = d.getElementById("hlp"),
+    $sts = d.getElementById("sts"),
+    $psw = d.getElementById("psw"),
+    $sgt = d.getElementById("sgt");
 
   let { hash } = location;
 
-  console.log(hash);
+  // console.log(hash);
+  $main.innerHTML = null;
 
   if (!hash || hash === "#/") {
-    d.getElementById("main").innerHTML = "<h2>HomePage</h2>";
+    $main.innerHTML = "<h2>Homepage</h2>";
   } else if (hash.includes("#/dashboard")) {
-    d.getElementById("main").innerHTML = "<h2>Dashboard</h2>";
+    $main.appendChild(MainDashBoard());
+    $db.classList.add("act-slct");
   } else if (hash.includes("#/costumers")) {
-    d.getElementById("main").innerHTML = "<h2>Costumers</h2>";
+    $main.innerHTML = "<h2>Costumers</h2>";
+    $ctm.classList.add("act-slct");
   } else if (hash.includes("#/message")) {
-    d.getElementById("main").innerHTML = "<h2>Message</h2>";
+    $main.innerHTML = "<h2>Message</h2>";
+    $msg.classList.add("act-slct");
   } else if (hash.includes("#/help")) {
-    d.getElementById("main").innerHTML = "<h2>Help</h2>";
+    $main.innerHTML = "<h2>Help</h2>";
+    $hlp.classList.add("act-slct");
+  } else if (hash.includes("#/settings")) {
+    $main.innerHTML = "<h2>Settings</h2>";
+    $sts.classList.add("act-slct");
   } else if (hash.includes("#/password")) {
-    d.getElementById("main").innerHTML = "<h2>Password</h2>";
+    $main.innerHTML = "<h2>Password</h2>";
+    $psw.classList.add("act-slct");
   } else {
-    d.getElementById("main").innerHTML = "<h2>Sign Out</h2>";
+    $main.innerHTML = "<h2>Sign Out</h2>";
+    $sgt.classList.add("act-slct");
   }
 }
