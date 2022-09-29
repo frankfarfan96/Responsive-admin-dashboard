@@ -1,4 +1,6 @@
 import { MainDashBoard } from "./MainDashBoard.js";
+import { HomePage } from "./HomePage.js";
+import { CostumersPages } from "./CostumersPages.js";
 
 export function Router() {
   const d = document,
@@ -18,12 +20,12 @@ export function Router() {
   $main.innerHTML = null;
 
   if (!hash || hash === "#/") {
-    $main.innerHTML = "<h2>Homepage</h2>";
+    $main.appendChild(HomePage());
   } else if (hash.includes("#/dashboard")) {
     $main.appendChild(MainDashBoard());
     $db.classList.add("act-slct");
   } else if (hash.includes("#/costumers")) {
-    $main.innerHTML = "<h2>Costumers</h2>";
+    $main.appendChild(CostumersPages());
     $ctm.classList.add("act-slct");
   } else if (hash.includes("#/message")) {
     $main.innerHTML = "<h2>Message</h2>";

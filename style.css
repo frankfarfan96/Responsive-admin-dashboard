@@ -500,3 +500,157 @@ body {
     right: 0;
   }
 }
+
+/*-------------*/
+
+/*HomePage*/
+
+h2.welcome {
+  color: #287bff;
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.recentMoney {
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.recentMoney table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.recentMoney table tbody td:hover {
+  background: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+}
+
+table {
+  box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+  padding: 1rem;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.b-b {
+  font-weight: bold;
+  color: gray;
+  padding-top: 1.5rem;
+}
+
+.titleRow {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #287bff;
+}
+
+/*------ Costumers ------*/
+
+table.table-costumer {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tb-head {
+  color: var(--white);
+}
+
+.tbl-header {
+  color: var(--black1);
+  background: var(--blue);
+}
+.tbl-content {
+  background: var(--grey);
+  color: var(--black1);
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 14%);
+}
+.table-costumer th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+tbody.tbody td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.td-row-btns {
+  display: flex;
+  justify-content: left;
+  gap: 9px;
+}
+.td-btns {
+  color: #222;
+  background: var(--blue);
+  border: 1px solid var(--grey);
+  border-radius: 100px;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 2px;
+  width: 50px;
+  height: 30px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.red {
+  background: rgb(237, 60, 60);
+}
+.btn-all {
+  background: transparent;
+  border: none;
+  color: var(--blue);
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.9s;
+  padding: 3px 21px;
+}
+.btn-all:hover {
+  color: rgb(223, 223, 49);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.select {
+  height: fit-content;
+}
+
+.h1 {
+  margin-bottom: 50px;
+}

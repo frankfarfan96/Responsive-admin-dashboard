@@ -8,12 +8,12 @@ export function MainDashBoard() {
               <div class="numbers">1,504</div>
               <div class="cardName">Daily Views</div>
             </div>
-            <div class="iconBx"><ion-icon name="cart-outline"></ion-icon></div>
+            <div class="iconBx"><ion-icon name="eye-outline"></ion-icon></div>
           </div>
           <div class="card">
             <div>
               <div class="numbers">80</div>
-              <div class="cardName">Sales</div>
+              <div class="cardName">Month Sales</div>
             </div>
             <div class="iconBx">
               <ion-icon name="cart-outline"></ion-icon>
