@@ -17,7 +17,7 @@ export function CostumersPages() {
       <button class="btn-all all">View All</button>
       </div>
 
-
+    <div class="border-radious">
       <div class="tbl-header">
         <table class="table-costumer" cellpadding="0" cellspacing="0" border="0">
           <thead>
@@ -32,7 +32,7 @@ export function CostumersPages() {
         </table>
       </div>
 
-      </div>
+      
 
       <div class="tbl-content">
         <table  class="table-costumer" cellpadding="0" cellspacing="0" border="0">

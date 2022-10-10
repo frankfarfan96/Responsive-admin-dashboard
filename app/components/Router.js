@@ -1,6 +1,7 @@
 import { MainDashBoard } from "./MainDashBoard.js";
 import { HomePage } from "./HomePage.js";
 import { CostumersPages } from "./CostumersPages.js";
+import { ChatPages } from "./ChatPages.js";
 
 export function Router() {
   const d = document,
@@ -28,7 +29,7 @@ export function Router() {
     $main.appendChild(CostumersPages());
     $ctm.classList.add("act-slct");
   } else if (hash.includes("#/message")) {
-    $main.innerHTML = "<h2>Message</h2>";
+    $main.appendChild(ChatPages());
     $msg.classList.add("act-slct");
   } else if (hash.includes("#/help")) {
     $main.innerHTML = "<h2>Help</h2>";
